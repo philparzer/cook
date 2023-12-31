@@ -2,17 +2,23 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
-  project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
-  },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  logo: <span style={{fontSize: 32}}>🍳</span>,
   footer: {
-    text: 'Nextra Docs Template',
+    component: () => {return<></>}
   },
+  feedback: {
+    content: () => {return<></>}
+  },
+  editLink: {
+    component: () => {return<></>}
+  },
+  i18n: [
+    { locale: 'en', text: 'English' },
+    { locale: 'de', text: 'Deutsch' },
+  ],
+  search: {
+    placeholder: () => "Search..."
+  }
 }
 
 export default config
